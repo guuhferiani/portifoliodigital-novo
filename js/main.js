@@ -7,7 +7,7 @@
   "use strict";
 
   /**
-   * Easy selector helper function
+   * Função de seleção fácil
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -19,7 +19,10 @@
   }
 
   /**
-   * Easy event listener function
+   * Easy event listener function 
+   * Função de ouvinte de eventos
+   * Função espera que um evento ocorra e depois responde a ele
+   * Função de ouvinte de eventos
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -32,8 +35,36 @@
     }
   }
 
+  /*
+Este trecho de código é uma função em JavaScript chamada on,
+que é utilizada para adicionar um ouvinte de eventos a um elemento HTML
+ou a vários elementos HTML, dependendo do parâmetro all.
+
+Aqui está uma explicação do código linha por linha:
+
+const on = (type, el, listener, all = false) => {: Esta linha define uma função chamada on que aceita quatro parâmetros: type (o tipo de evento a ser ouvido, como "click" ou "mouseover"), el (o elemento HTML ao qual queremos adicionar o ouvinte de eventos), listener (a função a ser executada quando o evento ocorrer) e all (um parâmetro opcional, que por padrão é falso).
+
+let selectEl = select(el, all): Esta linha chama uma função select (que não está definida no trecho de código fornecido) e atribui o resultado a selectEl. Presumivelmente, select é uma função que retorna um elemento HTML ou uma lista de elementos HTML com base no seletor passado como argumento (el). O parâmetro all indica se todos os elementos correspondentes devem ser selecionados ou apenas o primeiro.
+
+if (selectEl) {: Verifica se selectEl não é nulo ou indefinido.
+
+if (all) {: Verifica se o parâmetro all é verdadeiro.
+
+selectEl.forEach(e => e.addEventListener(type, listener)): Se all for verdadeiro, percorre cada elemento em selectEl (presumivelmente uma lista de elementos) e adiciona o ouvinte de eventos listener para o tipo de evento especificado (type).
+
+selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte de eventos listener ao elemento selectEl para o tipo de evento especificado (type).
+
+}: Fecha os blocos de código if e else internos.
+
+}: Fecha o bloco de código da função on.
+  
+  */
+
+
+
+
   /**
-   * Easy on scroll event listener 
+   * evento para o (scroll) 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -71,7 +102,7 @@
   }
 
   /**
-   * Back to top button
+   * Botão voltar ao topo
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -87,7 +118,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Alternar navegação móvel
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('body').classList.toggle('mobile-nav-active')
@@ -96,7 +127,7 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Rolar com deslocamento em links com nome de classe .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -114,7 +145,7 @@
   }, true)
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Rolar com deslocamento no carregamento da página com links hash no URL
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -124,9 +155,10 @@
     }
   });
 
-  /**
-   * Hero type effect
-   */
+  /* 
+  * Hero Efeito digitar 
+  */
+  
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
@@ -141,7 +173,7 @@
   }
 
   /**
-   * Skills animation
+   * Animação de habilidades
    */
   let skilsContent = select('.skills-content');
   if (skilsContent) {
@@ -158,7 +190,9 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * Biblioteca Isotope: é uma biblioteca JavaScript para layouts dinâmicos 
+   * e filtragem de elementos
+   * Porfolio isotope e filtro
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -188,14 +222,15 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Iniciar portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * Portfolio
+   * Controle deslizante de detalhes do portfólio
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
@@ -212,7 +247,7 @@
   });
 
   /**
-   * Testimonials slider
+   * Controle deslizante de depoimentos
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
@@ -241,7 +276,8 @@
   });
 
   /**
-   * Animation on scroll
+   * Animação na rolagem
+   *  on scroll
    */
   window.addEventListener('load', () => {
     AOS.init({
@@ -253,7 +289,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Iniciar contador
    */
   new PureCounter();
 
