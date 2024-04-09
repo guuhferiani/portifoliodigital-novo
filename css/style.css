@@ -1,5 +1,3 @@
-/**
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -28,7 +26,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
+# Botão voltar ao topo
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
@@ -61,7 +59,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Header
+# Cabeçalho
 --------------------------------------------------------------*/
 #header {
   position: fixed;
@@ -77,14 +75,14 @@ h6 {
   overflow-y: auto;
 }
 
-#header .profile img {
+#header .perfil img {
   margin: 15px auto;
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
 }
 
-#header .profile h1 {
+#header .perfil h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -94,13 +92,13 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a,
-#header .profile h1 a:hover {
+#header .perfil h1 a,
+#header .perfil h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-#header .profile .social-links a {
+#header .perfil .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #212431;
@@ -115,7 +113,7 @@ h6 {
   transition: 0.3s;
 }
 
-#header .profile .social-links a:hover {
+#header .perfil .social-links a:hover {
   background: #149ddd;
   color: #fff;
   text-decoration: none;
@@ -150,7 +148,9 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
 /* Desktop Navigation */
+
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -338,53 +338,53 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# sobre
 --------------------------------------------------------------*/
-.about .content h3 {
+.sobre .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
 }
 
-.about .content ul {
+.sobre .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.sobre .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.about .content ul strong {
+.sobre .content ul strong {
   margin-right: 10px;
 }
 
-.about .content ul i {
+.sobre .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
 }
 
-.about .content p:last-child {
+.sobre .content p:last-child {
   margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
-# Facts
+# feitos
 --------------------------------------------------------------*/
-.facts {
+.feitos {
   padding-bottom: 30px;
 }
 
-.facts .count-box {
+.feitos .count-box {
   padding: 30px;
   width: 100%;
 }
 
-.facts .count-box i {
+.feitos .count-box i {
   display: block;
   font-size: 44px;
   color: #149ddd;
@@ -392,7 +392,7 @@ section {
   line-height: 0;
 }
 
-.facts .count-box span {
+.feitos .count-box span {
   font-size: 48px;
   line-height: 40px;
   display: block;
@@ -401,7 +401,7 @@ section {
   margin-left: 60px;
 }
 
-.facts .count-box p {
+.feitos .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
@@ -409,7 +409,7 @@ section {
   color: #122f57;
 }
 
-.facts .count-box a {
+.feitos .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
@@ -419,7 +419,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.facts .count-box a:hover {
+.feitos .count-box a:hover {
   color: #1f5297;
 }
 
