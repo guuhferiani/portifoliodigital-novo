@@ -84,6 +84,11 @@ h6 {
 #header .perfil img {
   margin: 15px auto;
   display: block;
+  /*
+  Define a imagem como um elemento de bloco. Por padrão, 
+  elementos img são inline, mas ao definir como block,
+  a imagem ocupará a largura total disponível e permitirá que as margens auto funcionem para centralizá-la.
+  */
   width: 120px;
   border: 8px solid #2c2f3f;
 }
