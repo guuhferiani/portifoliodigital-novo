@@ -74,7 +74,11 @@ h6 {
   background: #040b14;
   overflow-y: auto;  /* overflow-y: controla o comportamento de rolagem e exibição do conteúdo que ultrapassa a altura de um elemento.*/
   /* auto:  Este valor faz com que uma barra de rolagem vertical apareça automaticamente se o conteúdo do elemento for maior do que a altura do elemento.
-  Se o conteúdo couber dentro do elemento sem ultrapassar seus limites, a barra de rolagem não será exibida. */
+  Se o conteúdo couber dentro do elemento sem ultrapassar seus limites, a barra de rolagem não será exibida. 
+  
+  Configura a rolagem vertical dentro do elemento #header. Se o conteúdo do #header exceder a altura do elemento, uma barra de rolagem vertical aparecerá automaticamente.
+  
+  */
 }
 
 #header .perfil img {
